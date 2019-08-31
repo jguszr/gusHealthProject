@@ -46,6 +46,11 @@ body_files = [
     ("LeanBodyMass.csv", "lbm_kg")
 ]
 
+distance_files = [
+    ("DistanceWalkingRunning.csv", "distance_km")
+]
+
+
 workout_fields = [
         "creationDate",
         "workoutActivityType",
@@ -79,4 +84,5 @@ if __name__ == "__main__":
     build_file("energy.csv", out_path, energy_files)
     build_file("heart_measures.csv",out_path,heart_files)
     build_file("body_measures.csv",out_path,body_files)
+    build_file("distanceWalking.csv",out_path,distance_files)
     single_file_handler("workout.csv",out_path, workout_fields)
